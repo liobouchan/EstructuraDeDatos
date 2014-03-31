@@ -56,11 +56,22 @@
       5; ¿Cuál es el valor inicial de tope?
         tope = -1
 
-    //Crear Pila.- Cre la pila y la inicializa para su uso normal
-      void crearPila( Pila *p , char *tipo){
-        p -> tope = -1;
-        strcpy( p -> tipo , tipo );
-        p -> contElems = 0;
-      }
+    //Crear Pila.- Cre la pila y la inicializa para su uso norma
+      1) Pila p;
+        void crearPila( Pila *p , char *tipo){
+          p -> tope = -1;
+          strcpy( p -> tipo , tipo );
+          p -> contElems = 0;
+        }
+
+      2) Pila *p;
+        void crearPila( Pila **p , char *tipo){
+          *p = (Pila *)malloc(sizeof(Pila));
+          (*p) -> tope = -1;
+          strcpy( (*p) -> tipo , tipo );
+          (*p) -> contElems = 0;
+        }
+
     //Push
+      
     //Pop
