@@ -40,6 +40,7 @@
       int contElems;
     }Pila;
 
-    //Crear Pila
+    //Crear Pila.- Cre la pila y la inicializa para su uso normal
+      
     //Push
     //Pop
