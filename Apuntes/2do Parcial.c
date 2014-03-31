@@ -41,6 +41,10 @@
     }Pila;
 
     //Crear Pila.- Cre la pila y la inicializa para su uso normal
-      
+      void crearPila( Pila *p , char *tipo){
+        p -> tope =
+        strcpy( p -> tipo , tipo );
+        p -> contElems = 0;
+      }
     //Push
     //Pop
