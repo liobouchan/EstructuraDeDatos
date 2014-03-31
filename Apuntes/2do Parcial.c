@@ -19,3 +19,15 @@
   //Tope 
     1; El lugar donde se va a insertar un elemento en la pila.
     2; El elemento que se va a eliminar de la pila.
+
+  //Restricciones
+    1; Para la pila estática, no se puede insertar un nuevo elemento en una
+      pila llena, si ésta ocurre, se estaría provocando un desbordamiento.
+
+    2; No se puede eliminar un elmento de una pila vacía, si ésto ocurre,
+      se estaría provocando un subdesbordamiento.
+
+  //Operaciones
+    1; Insetar un elemento (push): Insetar un elemento en el tope de la pila.
+    2; ELiminar un elemento (pop): Elimina el elemento que se encuentra en el
+      tope de la pila.
