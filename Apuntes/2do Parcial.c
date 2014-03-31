@@ -34,13 +34,14 @@
 
   //Implementación
     typedef struct{
-      Datos elementos[tamaño maximo];
+      Datos elementos[tamaño-maximo];
       int tope;
       char tipo[100];
       int contElems;
     }Pila;
 
     //Saberes
+      // n es igual al tamaño máximo de la pila
       1; ¿Cuándo la pila está llena?
         tope = n-1 , contElems = n
 
@@ -73,5 +74,14 @@
         }
 
     //Push
-      
+      int push( Pila * p , Datos nuevo ){
+        if( p -> tope == tamaño-maximo-1 ){
+          printf("%s\n", "Pila llena");
+          return 0;
+        }
+        p -> elementos [ p -> tope +1 ] = nuevo;
+        p -> tope += 1;
+        p -> contElems += 1;
+        return 1;
+      }
     //Pop
