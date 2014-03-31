@@ -38,4 +38,8 @@
       int tope;
       char tipo[100];
       int contElems;
-    };
+    }Pila;
+
+    //Crear Pila
+    //Push
+    //Pop
