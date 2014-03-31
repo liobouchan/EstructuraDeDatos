@@ -40,9 +40,24 @@
       int contElems;
     }Pila;
 
+    //Saberes
+      1; ¿Cuándo la pila está llena?
+        tope = n-1 , contElems = n
+
+      2; ¿Cuando la pila está vacía?
+        tope = -1 , contElems = 0
+
+      3; ¿Cuál es el índice dónde se va a insertar el nuevo elemento?
+        tope + 1
+
+      4; ¿Cuál es el índice dónde se va a eliminar el elemento?
+        tope
+
+      5; ¿Cuál es el valor inicial de tope?
+        tope = -1
     //Crear Pila.- Cre la pila y la inicializa para su uso normal
       void crearPila( Pila *p , char *tipo){
-        p -> tope =
+        p -> tope = -1;
         strcpy( p -> tipo , tipo );
         p -> contElems = 0;
       }
