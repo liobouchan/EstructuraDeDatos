@@ -55,6 +55,7 @@
 
       5; ¿Cuál es el valor inicial de tope?
         tope = -1
+
     //Crear Pila.- Cre la pila y la inicializa para su uso normal
       void crearPila( Pila *p , char *tipo){
         p -> tope = -1;
