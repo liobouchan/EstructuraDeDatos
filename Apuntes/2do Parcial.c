@@ -31,3 +31,11 @@
     1; Insetar un elemento (push): Insetar un elemento en el tope de la pila.
     2; ELiminar un elemento (pop): Elimina el elemento que se encuentra en el
       tope de la pila.
+
+  //Implementación
+    typedef struct{
+      Datos elementos[tamaño maximo];
+      int tope;
+      char tipo[100];
+      int contElems;
+    };
