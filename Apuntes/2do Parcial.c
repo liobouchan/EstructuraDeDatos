@@ -110,3 +110,16 @@
           p -> contElems -=1;
           return 1;
         }
+    //Mostrar Pila
+      int mostrar_pila( Pila *p ){
+        int topeAux = p  -> tope;
+        if ( topeAux == -1 ){
+          printf("%s\n", "PIla vacia");
+          return -1;
+        }
+        while( topeAux != -1 ){
+          printf("%d\n", p -> elementos[topeAux].ALGUNDATO);
+          topeAux --;
+        }
+        return 1;
+      }
