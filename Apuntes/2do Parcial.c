@@ -36,6 +36,7 @@
       que la pila esté vacía.
 
   //Implementación
+    Datos datoNULO;   //Variable global para el pop
     typedef struct{
       Datos elementos[tamaño-maximo];
       int tope;
@@ -88,3 +89,13 @@
         return 1;
       }
     //Pop
+      Datos pop( Pila *p ){
+        if( p -> tope == -1){
+          printf("%s\n", "Pila Vacia" );
+          return datoNULO; //Declarada como variable global.
+        }
+        aux = p -> elementos[ p -> tope ];
+        p -> tope -= 1;
+        p -> contElems -=1;
+        return aux;
+      }
