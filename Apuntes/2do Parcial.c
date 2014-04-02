@@ -99,3 +99,14 @@
         p -> contElems -=1;
         return aux;
       }
+      //Otra Implementación de Pop
+        int pop( Pila *p , Datos *aux ){
+          if( p -> tope == -1 ){
+            printf("%s\n", "Pila vacia \n");
+            return -1;
+          }
+          *aux = p -> elementos[ p -> tope ];
+          p -> tope -= 1;
+          p -> contElems -=1;
+          return 1;
+        }
