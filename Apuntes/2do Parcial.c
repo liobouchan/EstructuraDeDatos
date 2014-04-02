@@ -30,7 +30,10 @@
   //Operaciones
     1; Insetar un elemento (push): Insetar un elemento en el tope de la pila.
     2; ELiminar un elemento (pop): Elimina el elemento que se encuentra en el
-      tope de la pila.
+      tope de la pila, retornandolo.
+    3; Retornar Elemento : Si se va a retomar el elemento que se encuentra en el
+      tope de la pila, debemos conocer el valor nulo de ese elemento en caso de 
+      que la pila esté vacía.
 
   //Implementación
     typedef struct{
