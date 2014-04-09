@@ -168,3 +168,20 @@
         Pila -> contNodos += 1;
     }
   //Pop
+
+//TAD Cola
+  Es una estructura lineal de datos donde los nuevos elementos se isnertan
+  por un extremo y se eliminan por el otro. Es decir, el primer elemento
+  que se introduce será el primero en elimnarse, debido a esto, una cola 
+  se conoce como una estructura FIFO ( First-in , first-out : Primero en
+    entrar , primer en salir).
+  -Representación de una cola:
+    1) Estática .- Utilizando un arreglo
+    2) Dinámica .- Utilizando una lista.
+  Cuando se va a implementar una cola, es importante definir un elemento llamado
+  frente, que será el lugar donde se va a insertar el nuevo elemento a una cola.
+  También, definir un elemento llamado final, que será el lugar donde se encuentra 
+  el elemento que se va a eliminar de la cola.
+  Abstracción de la COla.
+
+  1) Estática
