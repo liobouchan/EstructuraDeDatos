@@ -123,3 +123,29 @@
         }
         return 1;
       }
+
+//Pila Dinamica
+  
+  typedef struct nodo {
+    struct nodo *sig;
+    Datos info;
+  }Nodo;
+
+  typedef struct {
+    Nodo *tope;
+    char tipo[100];
+    int contNodos;
+  }Lista;
+
+  Lista *pila;
+
+  //Crear Pila
+    void crearPila( Lista **Pila , char *info){
+      *Pila = ( Lista * )malloc(sizeof(Lista));
+      (*Pila) -> tope = NULL;
+      (*Pila) -> contNodos = 0;
+      strcpy((*PIla) -> tipo, info);
+    }
+    
+  //Push
+  //Pop
