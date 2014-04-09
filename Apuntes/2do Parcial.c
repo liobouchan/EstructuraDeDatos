@@ -146,6 +146,25 @@
       (*Pila) -> contNodos = 0;
       strcpy((*PIla) -> tipo, info);
     }
-    
   //Push
+    int push( Lista *Pila , Datos info ){
+      Nodo *aux = NULL;
+      aux = ( Nodo* )malloc(sizeof(Nodo));
+      if( aux == NULL ){
+        printf("%s\n", "Error");
+        return -1;
+      }
+      //incializar las valores de aux
+        aux -> info = info;
+        aux -> sig = NULL;
+      //caso 1 Pila vacia
+        if( Pila -> (tope == NULL)){
+          Pila -> tope = aux;
+          return 1;
+        }
+      //caso 2
+        aux -> sig = Pila -> tope;
+        Pila -> tope = aux;
+        Pila -> contNodos += 1;
+    }
   //Pop
